@@ -13,7 +13,7 @@ RUN apt-get -y --no-install-recommends install wget bzip2 && \
 
 RUN	\
  	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5AFA7A83 && \
-	add-apt-repository "deb http://ubuntu.openvidu.io/6.7.2 xenial kms6" && \
+	add-apt-repository "deb http://ubuntu.openvidu.io/6.8.0 xenial kms6" && \
 	apt-get update && \
 	apt-get -y install kurento-media-server && \
 	apt-get clean && \
